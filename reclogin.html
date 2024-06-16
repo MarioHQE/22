@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordar contrasenia</title>
+    <link rel="stylesheet" href="css/navstyle.css">
+    <script defer src="js/nav.js"></script>
+    <script src="https://kit.fontawesome.com/41f828ffd0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reclogin.css">
+    
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="Logo nav-link">
+                <img src="img/Logo Diana.jpeg" alt="" srcset="">
+            </a>
+            <button class="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-menu ">
+                <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link nav-menu-link_active">
+                        Información
+                    </a>
+                </li>
+                <li class="nav-menu-item"><a href="regform.html" class="nav-menu-link nav-link nav-menu-link_active">
+                        Registrar
+                    </a>
+                </li>
+                <li class="nav-menu-item"><a href="logform.html" class="nav-menu-link nav-link nav-menu-link_active">
+                        Login
+                    </a>
+                </li>
+                <li class="nav-menu-item "><a
+                        href="https://www.facebook.com/profile.php?id=283584295097930&paipv=0&eav=Afbek-vaGPA7uCJb-pVzP4JuvK09NZkgwUMPyTWOhKQFV_1A9c9nPWEc1l-fG9sX2o4&_rdr"
+                        class="nav-menu-link nav-link nav-menu-link_active" target="_blank">
+                        Facebook
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-wrap">
+        <div class="wrapper">
+            <form class="form-container">
+                <h1> Recordar contraseña</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Correo" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <button type="submit" class="btn"> Enviar Correo </button>
+
+
+
+
+
+            </form>
+
+        </div>
+    </div>
+    <script>
+            const boton=document.querySelector(".btn");
+            boton.addEventListener("click",()=>{
+                alert("Se le ha enviado un mail al correo");
+            })
+
+    </script>
+</body>
+
+</html>
