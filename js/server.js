@@ -24,9 +24,9 @@ app.post("/create_preference", async (req, res) => {
                 }
             ],
             back_urls: {
-                success: "http://localhost/22/pagado.php",
-                failure: "http://localhost/22/pagado.php",
-                pending: "http://localhost/22/pagado.php",
+                success: "https://restaurantdiana.000webhostapp.com/reserva.php",
+                failure: "https://restaurantdiana.000webhostapp.com/index.php",
+                pending: "https://restaurantdiana.000webhostapp.com/index.php",
             },
             auto_return: "approved",
         };
