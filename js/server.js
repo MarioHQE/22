@@ -2,9 +2,9 @@ import express from 'express';
 import cors from 'cors';
 import { MercadoPagoConfig, Preference } from 'mercadopago';
 const app = express();
-const port = 27;
+const port = 3000;
 
-const client = new MercadoPagoConfig({ accessToken: 'TEST-6839131671515424-061001-4105f4b6d1f0946deedc4a5567b63334-1849783817' });
+const client = new MercadoPagoConfig({ accessToken: 'APP_USR-6839131671515424-061001-9a0daae2300bb7815aa1f64c103cdcb4-1849783817' });
 app.use(cors());
 app.use(express.json());
 
@@ -17,16 +17,16 @@ app.post("/create_preference", async (req, res) => {
         const body = {
             items: [
                 {
-                    quantity: Number(req.body.cantidad), 
-                    unit_price: Number(req.body.precio), 
+                    quantity: Number(req.body.quantity), 
+                    unit_price: Number(req.body.unit_price), 
                     title: req.body.titular,
                     currency_id: "PEN",
                 }
             ],
             back_urls: {
-                success: "https://restaurantdiana.000webhostapp.com/pagado.php",
-                failure: "https://restaurantdiana.000webhostapp.com/index.php",
-                pending: "https://restaurantdiana.000webhostapp.com/index.php",
+                success: "http://localhost/22/pagado.php",
+                failure: "http://localhost/22/pagado.php",
+                pending: "http://localhost/22/pagado.php",
             },
             auto_return: "approved",
         };
