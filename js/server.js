@@ -11,6 +11,14 @@ app.use(express.json());
 app.get("/", (req, res) => {
     res.send("Soy el server");
 });
+app.get("/index",(req,res)=>{
+  res.sendFile(`${__dirname}/index.html`,(err)=>{
+    if (err) {
+        console.log(err)
+        res.send(err.message)
+    }
+  })
+})
 
 app.post("/create_preference", async (req, res) => {
     try {
