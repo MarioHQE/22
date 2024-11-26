@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
     res.send("Soy el server");
 });
 app.get("/index",(req,res)=>{
-  res.sendFile(`${__dirname}/index.html`,(err)=>{
+  res.sendFile(`/22/index.html`,(err)=>{
     if (err) {
         console.log(err)
         res.send(err.message)
